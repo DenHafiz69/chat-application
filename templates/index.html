@@ -8,8 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.min.js"></script>
     <title>Chat App</title>
 </head>
-<body>
-
+<body style="text-align: center; font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">
     <script type="text/javascript">
         $(document).ready(function() {
             var socket = io.connect("http://localhost:5000")
@@ -29,7 +28,7 @@
         });
     </script>
 
-    <div id="messages">
+    <div id="messages" style="margin: 0 auto; width: 60%; text-align: left; min-height: 300px;">
 
     </div>
 
