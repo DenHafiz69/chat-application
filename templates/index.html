@@ -29,21 +29,6 @@
     </script>
 
     <!-- Listen for "Enter" to execute the send button -->
-    <script>
-        // Get the input field
-        var input = document.getElementById("message");
-        
-        // Execute a function when the user presses a key on the keyboard
-        input.addEventListener("keypress", function(event) {
-        // If the user presses the "Enter" key on the keyboard
-        if (event.key === "Enter") {
-            // Cancel the default action, if needed
-            event.preventDefault();
-            // Trigger the button element with a click
-            document.getElementById("sendBtn").click();
-        }
-        });
-    </script>
 
     <div id="messages" style="margin: 0 auto; width: 60%; text-align: left; min-height: 300px;">
 
@@ -52,6 +37,22 @@
     <input type="text" id="username" placeholder="Username">
     <input type="text" id="message" placeholder="Message">
     <button id="sendBtn">Send</button>
+
+    <script>
+        // Get the input field
+        var input = document.getElementById("message");
+        
+        // Execute a function when the user presses a key on the keyboard
+        input.addEventListener("keypress", function(event) {
+        // If the user presses the "Enter" key on the keyboard
+            if (event.key === "Enter") {
+                // Cancel the default action, if needed
+                event.preventDefault();
+                // Trigger the button element with a click
+                document.getElementById("sendBtn").click();
+            }
+        });
+    </script>
 
 </body>
 </html>
