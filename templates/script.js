@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('#sendBtn').on('click', function() {
         socket.send($('#username').val() + ': ' + $('#message').val());
         $('#message').val('');
-    })
+    });
 
 });
 
