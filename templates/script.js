@@ -12,7 +12,9 @@ input.addEventListener("keypress", function(event) {
     }
 });
 
+// SocketIO script
 $(document).ready(function() {
+    // Create a socket and connect to localhost
     var socket = io.connect("http://localhost:5000")
     socket.on('connect', function() {
         socket.send("User connected!");
